@@ -56,7 +56,7 @@ sounds.play 'MyTrack', soundSettings;
 `options.loop` | `boolean` | Если установить значение true, звук будет воспроизводиться в цикле.
 `options.filters` | `filters.Filter[]` | Фильтры `pixi-sound`, которые необходимо применить
 `options.complete` | `Function` | Обратный вызов, вызываемый при завершении воспроизведения звука.
-`options.loaded` | `Function` | Если звук не предварительно загружен, этот функцию будет вызван при завершении загрузки звукового файла.
+`options.loaded` | `Function` | Если звук предварительно не загружен, эта функция будет вызвана при завершении загрузки звукового файла.
 `options.muted` | `boolean` | Если звук по умолчанию замолчен.
 `options.singleInstance` | `boolean` | Установка значения true останавливает любые воспроизводимые экземпляры.
 `options.speed` | `number` | Скорость воспроизведения звука; по умолчанию используется настройка скорости звука.
@@ -75,7 +75,7 @@ sounds.play 'MyTrack', soundSettings;
 ::: code-tabs#reference
 @tab JavaScript
 ```js
-sounds.playAt('MySound', этот);
+sounds.playAt('MySound', this);
 ```
 @tab CoffeeScript
 ```coffee
